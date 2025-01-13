@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS</title>
+    <link rel="stylesheet" href="css/styles/base.css">
+    <link rel="stylesheet" href="css/text/text.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/description.css">
+    <link rel="stylesheet" href="css/components/contact-form.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="">
+            <img src="media/logo_transparent.png" alt="ADS Logo">
+        </a>
+        <button id="how-does-it-work">
+            <h6>How does it work?</h6>
+        </button>
+        <button id="contact">
+            <h6>Contact</h6>
+        </button>
+    </div>
+    <div class="hero-wrapper">
+        <div class="hero">
+            <video autoplay muted loop playsinline>
+                <source src="media/hero_section.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay">
+                <div>
+                    <h1>Have an idea?</h1>
+                    <h5 style="margin-bottom: 40px; font-weight: normal;">Get in touch with one of our advisors now!</h5>
+                    <button class="submit-button"><small>Get started</small></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="what-we-offer">
+        <h3 style="margin: 0;">So, how does it work?</h3>
+        <div class="card-section-wrapper">
+            <div class="card-display-container" id="card-slider">
+                <div class="card">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h6>The planning phase</h6>
+                    <small>In the planning phase, the client shares their goals and requirements, and we collaborate to design a tailored solution. We discuss ideas, functionality, and user experience to ensure alignment on the project's objectives before moving forward.</small>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h6>Development</h6>
+                    <small>In the development phase, we build the project using clean, scalable code while following best practices to ensure security and performance. We provide regular updates to keep you informed and ensure the solution is functional, user-friendly, and aligned with the plan.</small>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-comments"></i>
+                    <h6>Feedback</h6>
+                    <small>In the feedback phase, we share the project with you for review and testing. If any changes are needed, we return to the development stage to make adjustments. This ensures the final product aligns perfectly with your expectations.</small>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h6>Project deployment</h6>
+                    <small>In the deployment phase, we launch the project to the live environment, ensuring everything runs smoothly. We provide support after deployment to address any issues and maintain optimal performance.</small>
+                </div>
+            </div>
+            <div class="orb-sliders">
+                <button class="orb-button active" id="orb-1"></button>
+                <button class="orb-button" id="orb-2"></button>
+                <button class="orb-button" id="orb-3"></button>
+                <button class="orb-button" id="orb-4"></button>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-wrapper">
+        <img src="media/contact.jpg" alt="Software development team">
+        <div id="contact-form-overlay">
+            <div style="position: relative;">
+                <div id="contact-form">
+                    <h4>Get in touch</h4>
+                    <small>To get in touch, contact us via any of these methods</small>
+                    <div class="contact-option">
+                        Email
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                            example.email@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-option">
+                        Mobile / WhatsApp
+                        <div>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            +44 7495 123456
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cardSlider.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/88027e7db3.js" crossorigin="anonymous"></script>
+</body>
+</html>
