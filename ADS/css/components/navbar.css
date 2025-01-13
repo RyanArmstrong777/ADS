@@ -1,0 +1,53 @@
+#navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: 0.5s;
+    gap: 40px;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: var(--before-top, -100%);
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(18, 18, 8, 1) 0%, transparent 100%);
+    transition: 0.5s ease;
+}
+
+#navbar > * {
+    position: relative;
+    z-index: 11;
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: var(--text-secondary-color);
+}
+
+#navbar > *:not(:first-child):hover {
+    color: var(--text-color);
+}
+
+#navbar > * > img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
